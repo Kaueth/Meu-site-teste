@@ -9,6 +9,23 @@
     @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
     </style>
     </head>
+
+<script>
+    let selectedRadio = null;
+    const radios = document.querySelectorAll('input[type=radio][name=pergunta1]');
+    
+    radios.forEach(radio => {
+        radio.addEventListener('click', function () {
+            if (selectedRadio === this) {
+                this.checked = false;
+                selectedRadio = null;
+            } else {
+                selectedRadio = this;
+            }
+        });
+    });
+</script>
+
     <body>
         <header>
             
@@ -28,23 +45,18 @@
                 <h2>Pergunta 1: Em qual linguagem
                     de programação o Minecraft é feito?</h2>
                     <form>
-                        <input type="radio" name="Pergunta 1" id="p1a"
-                        value="Java">
-                        <label for="p1a">Java</label>
+        <input type="radio" name="pergunta1" id="p1a" value="Java">
+        <label for="p1a">Java</label><br>
 <br>
-                        <input type="radio" name="Pergunta 2" id="p2a"
-                        value="Python">
-                        <label for="p2a">Python</label>
+        <input type="radio" name="pergunta1" id="p1b" value="Python">
+        <label for="p1b">Python</label><br>
 <br>
-                        <input type="radio" name="Pergunta 3" id="p3a"
-                        value="Html">
-                        <label for="p3a">Html</label>
+        <input type="radio" name="pergunta1" id="p1c" value="Html">
+        <label for="p1c">Html</label><br>
 <br>
-                        <input type="radio" name="Pergunta 4" id="p4a"
-                        value="Javascript">
-                        <label for="p4a">Javascript</label>
-                        <br>
-                    </form>
+        <input type="radio" name="pergunta1" id="p1d" value="Javascript">
+        <label for="p1d">Javascript</label><br>
+    </form>
             </section>
             <!--Pergunta 2-->
             <section>
@@ -56,11 +68,10 @@
             </section>
             <!--Pergunta 3-->
             <section>
-                <h2>Pergunta 3: Informe a senha do seu cartão de crédito 
-                     para fins sem qualquer tipo de maldade
+                <h2>Pergunta 3: Informe o item secreto que o jogador ganha após defender uma vila de um ataque.
                 </h2>
                 <form>
-                        <input maxlength="6" type="password" name="pergunta3" id="p3" placeholder="Digite a senha do cartão">
+                        <input maxlength="21" type="password" name="pergunta3" id="p3" placeholder="Digite o nome do item secreto.">
                 </form>
             </section>
             <!--Pergunta 4-->
@@ -77,42 +88,42 @@
                 <form>
                     <input type="checkbox" name="pergunta5" id="p5a" 
                     value="Sou apaixonado">
-                    <label for="p5a">Sou apaixonado</label>
+                    <label for="p5a">Sou apaixonado.</label>
 <br>
                      <input type="checkbox" name="pergunta5" id="p5b" 
                     value="Gosto muito">
-                    <label for="p5b">Gosto muito</label>
+                    <label for="p5b">Gosto muito.</label>
 <br>
                      <input type="checkbox" name="pergunta5" id="p5c" 
                     value="Tanto faz">
-                    <label for="p5c">Tanto faz</label>
+                    <label for="p5c">Tanto faz.</label>
 <br>
                      <input type="checkbox" name="pergunta5" id="p5d" 
-                    value="Odeioo">
-                    <label for="p5d">Odeioo</label>
+                    value="Odeio">
+                    <label for="p5d">Odeio.</label>
                     <br>
                 </form>
             </section>
             <!--Pergunta 6-->
             <section>
                 <h2>Pergunta 6: Faça o uploud de uma foto 
-                    do Minecraft</h2>
+                    do Minecraft.</h2>
                     <form>
                         <input type="file" name="pergunta6" id="p6">
                     </form>
             </section>
             <!--Pergunta 7-->
             <section>
-                <h2>Pergunta 7: Selecione qual item de Minecraft você mais gosta </h2>
+                <h2>Pergunta 7: Selecione qual a espada mais forte do jogo. </h2>
 
                 <select name="pergunta7" id="p7a"> 
-                    <option value="Espada de diamante">Espada de diamante</option>
+                    <option value="Espada de DIAMANTE">Espada de DIAMANTE</option>
                  
-                    <option value="Espada de pedra">Espada de pedra</option>
+                    <option value="Espada de PEDRA">Espada de PEDRA</option>
 
-                    <option value="Espada de madeira">Espada de madeira</option>
+                    <option value="Espada de MADEIRA">Espada de MADEIRA</option>
 
-                    <option value="Espada de ouro">Espada de ouro</option>
+                    <option value="Espada de OURO">Espada de OURO</option>
                 </select>    
         
             
@@ -169,7 +180,7 @@
                 <ol>
                     <li>Java</li>
                     <li>Picareta de diamante</li>
-                    <li>Optativo</li>
+                    <li>Totem da imortalidade</li>
                     <li>17/05/2009</li>
                     <li>Sou apaixonado</li>
                     <li>Optativo</li>
@@ -211,22 +222,3 @@
         </footer>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
