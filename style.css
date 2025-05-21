@@ -139,14 +139,3 @@ padding: 2rem;
 text-align: center;
 }
 
-details > ol {
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.5s ease;
-  margin: 0;
-  padding-left: 1.2em;
-}
-
-details[open] > ol {
-  max-height: 500px; /* valor alto o suficiente para o conteúdo */
-}
