@@ -1,0 +1,144 @@
+* {
+    
+
+body {
+ font-family: "Cabin", sans-serif;
+      margin: 0;
+      padding: 0px;
+      border: 30px solid rgb(125, 225, 238); /* cor e espessura da moldura */
+      box-sizing: border-box;
+      min-height: 100vh;
+      background-color: #ffffff;
+    
+    
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 2rem;
+    background-color: rgb(125, 225, 238) ;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 40px;
+}
+
+main{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}
+
+fieldset {
+    border-width: 5px; /* Define a espessura da linha */
+    border-style: solid; /* Define o estilo da borda */
+    border-top-color: rgb(15, 14, 14); /* Define a cor da borda */
+    border-bottom-color:rgb(105, 103, 103) ;
+    border-left-color:rgb(105, 103, 103) ;
+    border-right-color:rgb(15, 14, 14) ;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+section {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+color: rgb(77, 75, 75);
+}
+
+h2 {
+color: black;
+font-size: 1.3rem;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="email"]{
+width: 100%;
+padding: 0.6rem;
+border: 2px solid rgb(125, 225, 238);
+border-radius: 5px;
+background-color: transparent;
+ cursor: pointer;
+}
+
+input::placeholder {
+    color: rgb(0, 0, 0);
+     cursor: pointer;
+}
+
+select {
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid rgb(125, 225, 238);
+}
+
+img {
+width: 5rem;
+border-radius: 5px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+border-top-color: rgb(21, 169, 189); /* Define a cor da borda */
+    border-bottom-color:rgb(21, 169, 189) ;
+    border-left-color:rgb(21, 169, 189) ;
+    border-right-color:rgb(21, 169, 189) ;
+    border-width: 5px; /* Define a espessura da linha */
+    border-style: solid;
+    border-radius: 5px;
+}
+
+th{
+background-color: rgb(125, 225, 238);
+color: black;
+padding: 1rem;
+}
+
+td {
+padding: 1rem;
+text-align: center;
+}
+
+details {
+    background-color:rgb(21, 169, 189) ;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+summary {
+color: black;
+}
+
+li {
+color: black;
+margin-left: 1.5rem;
+line-height: 1.8;
+
+}
+
+textarea {
+border-radius: 5px;
+border-color: rgb(125, 225, 238);
+border-width: 2px;
+}
+
+button{
+border: none;
+padding: 0.8rem;
+cursor: pointer;
+background-color: rgb(21, 169, 189);
+}
+
+footer {
+padding: 2rem;
+text-align: center;
+text-decoration: none;
+}
